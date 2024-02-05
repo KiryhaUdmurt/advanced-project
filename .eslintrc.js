@@ -5,7 +5,8 @@ export default {
     },
     "extends": [
         "standard-with-typescript",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:i18next/recommended"
     ],
     "overrides": [
         {
@@ -25,7 +26,9 @@ export default {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "@typescript-eslint",
+        "i18next"
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
@@ -38,6 +41,7 @@ export default {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/member-delimiter-style": "off",
         "@typescript-eslint/prefer-nullish-coalescing": "off",
-        "@typescript-eslint/no-floating-promises": "warn"
+        "@typescript-eslint/no-floating-promises": "warn",
+        "i18next/no-literal-string": ["error", { markupOnly: true }],
     }
 }
