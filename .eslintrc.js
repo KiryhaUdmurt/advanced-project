@@ -49,7 +49,11 @@ module.exports = {
         "@typescript-eslint/ban-ts-comment": "off",
         "@typescript-eslint/comma-dangle": "off",
         "space-before-function-paren": "off",
-        "@typescript-eslint/space-before-function-paren": "off"
+        "@typescript-eslint/space-before-function-paren": "off",
+        "@typescript-eslint/no-unsafe-argument": "off",
+        "i18next/no-literal-string": "warn",
+        "@typescript-eslint/no-confusing-void-expression": "off",
+        "@typescript-eslint/promise-function-async": "warn"
     },
     ignorePatterns: ".eslintrc.js"
 }
