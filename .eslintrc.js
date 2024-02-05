@@ -1,15 +1,15 @@
-export default {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "jest": true
+module.exports = {
+    env: {
+        browser: true,
+        es2021: true,
+        jest: true
     },
-    "extends": [
+    extends: [
         "standard-with-typescript",
         "plugin:react/recommended",
         "plugin:i18next/recommended"
     ],
-    "overrides": [
+    overrides: [
         {
             "env": {
                 "node": true
@@ -22,16 +22,18 @@ export default {
             }
         }
     ],
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
+    parserOptions: {
+        // project: './tsconfig.json',
+        // tsconfigRootDir: __dirname,
+        ecmaVersion: "latest",
+        sourceType: "module",
     },
-    "plugins": [
+    plugins: [
         "react",
         "@typescript-eslint",
         "i18next"
     ],
-    "rules": {
+    rules: {
         "react/react-in-jsx-scope": "off",
         "semi": [2, "always"],
         "@typescript-eslint/consistent-type-imports": "off",
@@ -44,5 +46,10 @@ export default {
         "@typescript-eslint/prefer-nullish-coalescing": "off",
         "@typescript-eslint/no-floating-promises": "warn",
         "i18next/no-literal-string": ["error", { markupOnly: true }],
-    }
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/comma-dangle": "off",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/space-before-function-paren": "off"
+    },
+    ignorePatterns: ".eslintrc.js"
 }
