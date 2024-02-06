@@ -53,7 +53,9 @@ module.exports = {
         "@typescript-eslint/no-unsafe-argument": "off",
         "i18next/no-literal-string": "warn",
         "@typescript-eslint/no-confusing-void-expression": "off",
-        "@typescript-eslint/promise-function-async": "warn"
+        "@typescript-eslint/promise-function-async": "warn",
+        "@typescript-eslint/indent": "off",
+        "n/handle-callback-err": "off"
     },
     ignorePatterns: ".eslintrc.js"
 }
