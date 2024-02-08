@@ -1,61 +1,62 @@
 module.exports = {
-    env: {
-        browser: true,
-        es2021: true,
-        jest: true
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+  },
+  extends: ["plugin:react/recommended", "airbnb", "plugin:i18next/recommended"],
+  parser: "@typescript-eslint/parser",
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    extends: [
-        "standard-with-typescript",
-        "plugin:react/recommended",
-        "plugin:i18next/recommended"
+    ecmaVersion: "latest",
+    sourceType: "module",
+  },
+  plugins: ["react", "@typescript-eslint", "i18next"],
+  rules: {
+    "react/jsx-indent": ['warn', 2],
+    "quotes": "off",
+    "quote-props": "off",
+    "react/jsx-indent-props": ['warn', 2],
+    indent: ['warn', 2],
+    "react/jsx-filename-extension": [
+      2,
+      { extensions: [".js", ".jsx", ".tsx"] },
     ],
-    overrides: [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
+    "import/no-unresolved": "off",
+    "linebreak-style": "off",
+    "import/prefer-default-export": "off",
+    "no-unused-vars": "warn",
+    "react/require-default-props": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "warn",
+    "react/function-component-definition": "off",
+    "no-shadow": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-underscore-dangle": "off",
+    "comma-dangle": "off",
+    "react/button-has-type": "off",
+    "i18next/no-literal-string": "warn",
+    "i18next/no-literal-string": [
+      "error",
+      {
+        markupOnly: true,
+        ignoreAttribute: ["data-testid"],
+      },
     ],
-    parserOptions: {
-        // project: './tsconfig.json',
-        // tsconfigRootDir: __dirname,
-        ecmaVersion: "latest",
-        sourceType: "module",
+    "max-len": ["error", { ignoreComments: true, code: 150 }],
+  },
+  globals: {
+    __IS_DEV__: true,
+  },
+  overrides: [
+    {
+      files: ["**/src/**/*.test.{ts,tsx}"],
+      rules: {
+        "i18next/no-literal-string": "off",
+      },
     },
-    plugins: [
-        "react",
-        "@typescript-eslint",
-        "i18next"
-    ],
-    rules: {
-        "react/react-in-jsx-scope": "off",
-        "semi": [2, "always"],
-        "@typescript-eslint/consistent-type-imports": "off",
-        "@typescript-eslint/quotes": "off",
-        "semi": "off",
-        "@typescript-eslint/semi": "off",
-        "@typescript-eslint/strict-boolean-expressions": "warn",
-        "@typescript-eslint/explicit-function-return-type": "off",
-        "@typescript-eslint/member-delimiter-style": "off",
-        "@typescript-eslint/prefer-nullish-coalescing": "off",
-        "@typescript-eslint/no-floating-promises": "warn",
-        "i18next/no-literal-string": ["error", { markupOnly: true }],
-        "@typescript-eslint/ban-ts-comment": "off",
-        "@typescript-eslint/comma-dangle": "off",
-        "space-before-function-paren": "off",
-        "@typescript-eslint/space-before-function-paren": "off",
-        "@typescript-eslint/no-unsafe-argument": "off",
-        "i18next/no-literal-string": "warn",
-        "@typescript-eslint/no-confusing-void-expression": "off",
-        "@typescript-eslint/promise-function-async": "warn",
-        "@typescript-eslint/indent": "off",
-        "n/handle-callback-err": "off"
-    },
-    ignorePatterns: ".eslintrc.js"
-}
+  ],
+};

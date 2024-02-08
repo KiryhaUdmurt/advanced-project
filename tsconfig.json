@@ -20,4 +20,8 @@
       "module": "CommonJS"
     }
   },
+  "include": [
+    "./config/jest/setupTests.ts",
+    // "./.eslintrc.js"
+  ],
 }
