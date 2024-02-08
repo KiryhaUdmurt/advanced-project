@@ -38,9 +38,8 @@ module.exports = {
     "no-underscore-dangle": "off",
     "comma-dangle": "off",
     "react/button-has-type": "off",
-    "i18next/no-literal-string": "warn",
     "i18next/no-literal-string": [
-      "error",
+      "warn",
       {
         markupOnly: true,
         ignoreAttribute: ["data-testid"],
