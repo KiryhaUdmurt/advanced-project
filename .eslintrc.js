@@ -4,7 +4,12 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: ["plugin:react/recommended", "airbnb", "plugin:i18next/recommended"],
+  extends: [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:i18next/recommended",
+    "plugin:storybook/recommended"
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
@@ -38,11 +43,14 @@ module.exports = {
     "no-underscore-dangle": "off",
     "comma-dangle": "off",
     "react/button-has-type": "off",
+    "arrow-body-style": "off",
+    "object-curly-newline": "off",
+    "no-param-reassign": "off",
     "i18next/no-literal-string": [
       "warn",
       {
         markupOnly: true,
-        ignoreAttribute: ["data-testid"],
+        ignoreAttribute: ["data-testid", "to"],
       },
     ],
     "max-len": ["error", { ignoreComments: true, code: 150 }],
