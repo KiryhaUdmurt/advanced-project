@@ -16,6 +16,9 @@ export default {
   // cacheDirectory: "C:\\Users\\kalin\\AppData\\Local\\Temp\\jest",
 
   // Automatically clear mock calls, instances and results before every test
+  globals: {
+    __IS_DEV__: true,
+  },
   clearMocks: true,
   testEnvironment: "jsdom",
   testPathIgnorePatterns: ["\\\\node_modules\\\\"],

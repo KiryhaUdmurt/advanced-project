@@ -59,7 +59,7 @@ module.exports = {
     "jsx-a11y/no-static-element-interactions": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "implicit-arrow-linebreak": "off"
+    "implicit-arrow-linebreak": "off",
   },
   globals: {
     __IS_DEV__: true,
