@@ -1,5 +1,8 @@
+import { useCallback, useState } from "react";
 import { classNames } from "shared/lib/classNames/classNames";
-import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
+import { Modal } from "shared/ui/Modal/Modal";
+import { useTranslation } from "react-i18next";
+import { Button, ThemeButton } from "shared/ui/Button/Button";
 import cls from "./NavBar.module.scss";
 
 interface NavBarProps {
@@ -7,9 +10,22 @@ interface NavBarProps {
 }
 
 export const NavBar = ({ className }: NavBarProps) => {
+  const { t } = useTranslation();
+
+  const [isAuthModal, setIsAuthModal] = useState(false);
+
+  const onToggleModal = useCallback(() => {
+    setIsAuthModal((prev) => !prev);
+  }, []);
+
   return (
     <div className={classNames(cls.NavBar, {}, [className])}>
-      <div className="links">/</div>
+      <Button theme={ThemeButton.CLEAR_INVERTED} onClick={onToggleModal} className={cls.links}>
+        {t("Войти")}
+      </Button>
+      <Modal isOpen={isAuthModal} onClose={onToggleModal}>
+        Lorem Ipsu, asdkdfkn
+      </Modal>
     </div>
   );
 };
