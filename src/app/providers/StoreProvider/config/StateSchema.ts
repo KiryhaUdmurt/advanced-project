@@ -2,7 +2,9 @@
 //   value: number;
 // }
 
-export interface StateSchema {
-//   counter: CounterState;
+import { UserSchema } from "entities/User";
 
+export interface StateSchema {
+  //   counter: CounterState;
+  user: UserSchema;
 }
