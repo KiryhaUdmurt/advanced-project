@@ -1,4 +1,4 @@
 npm run build:prod
 npm run lint:ts
-mpm run lint:scss
+npm run lint:scss
 npm run test:unit

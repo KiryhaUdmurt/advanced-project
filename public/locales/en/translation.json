@@ -9,6 +9,9 @@
     "Переключить": "Toggle",
     "Сокращение": "EN",
     "Войти": "Sign In",
+    "Выйти": "Log out",
     "Введите имя пользователя": "Enter username",
-    "Введите пароль": "Enter password"
+    "Введите пароль": "Enter password",
+    "Форма авторизации": "Authorization",
+    "Неверный логин или пароль": "Incorrect login or password"
 }

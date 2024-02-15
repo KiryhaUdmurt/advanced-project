@@ -4,7 +4,7 @@ import cls from "./Button.module.scss";
 
 export enum ThemeButton {
   CLEAR = "clear",
-  CLEAR_INVERTED = 'clearInverted',
+  CLEAR_INVERTED = "clearInverted",
   OUTLINE = "outline",
   BACKGROUND = "background",
   BACKGROUND_INVERTED = "backgroundInverted",
@@ -21,6 +21,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   theme?: ThemeButton;
   square?: boolean;
   size?: ButtonSize;
+  disabled?: boolean;
 }
 export const Button: FC<ButtonProps> = (props) => {
   const {
@@ -29,17 +30,20 @@ export const Button: FC<ButtonProps> = (props) => {
     theme,
     square,
     size = ButtonSize.M,
+    disabled,
     ...otherProps
   } = props;
 
   const mods = {
     [cls.square]: square,
     [cls[size]]: true,
+    [cls.disabled]: disabled,
   };
 
   return (
     <button
       className={classNames(cls.Button, mods, [className, cls[theme]])}
+      disabled={disabled}
       {...otherProps}
     >
       {children}
