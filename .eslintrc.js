@@ -60,6 +60,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "implicit-arrow-linebreak": "off",
+    "operator-linebreak": "off"
   },
   globals: {
     __IS_DEV__: true,
