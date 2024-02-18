@@ -18,6 +18,7 @@ export default {
   // Automatically clear mock calls, instances and results before every test
   globals: {
     __IS_DEV__: true,
+    __API__: "",
   },
   clearMocks: true,
   testEnvironment: "jsdom",
@@ -26,10 +27,10 @@ export default {
   moduleFileExtensions: ["js", "jsx", "ts", "tsx", "json", "node"],
   rootDir: "../../",
   testMatch: ["<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)"],
-  setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
+  setupFilesAfterEnv: ["<rootDir>config/jest/setupTests.ts"],
   moduleNameMapper: {
-    '\\.(s?css)$': 'identity-obj-proxy',
-    '\\.svg': path.resolve(__dirname, 'jestEmptyComponent.tsx')
+    "\\.(s?css)$": "identity-obj-proxy",
+    "\\.svg": path.resolve(__dirname, "jestEmptyComponent.tsx"),
   },
   // testMatch: [
   //   "**/__tests__/**/*.[jt]s?(x)",

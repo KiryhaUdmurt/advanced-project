@@ -6,14 +6,15 @@
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,
+    "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strictNullChecks": false,
+    // "strictNullChecks": false,
     "baseUrl": ".",
     "paths": {
       "*": ["./src/*"]
-    }
+    },
   },
   "ts-node": {
     "compilerOptions": {

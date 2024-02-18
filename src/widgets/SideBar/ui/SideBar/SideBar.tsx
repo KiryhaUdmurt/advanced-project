@@ -1,4 +1,4 @@
-import React, { memo, useMemo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import { Button, ButtonSize, ThemeButton } from "shared/ui/Button/Button";
 import { LangSwitcher } from "widgets/LangSwitcher";
 import { ThemeSwitcher } from "widgets/ThemeSwitcher";

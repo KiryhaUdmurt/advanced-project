@@ -8,7 +8,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb",
     "plugin:i18next/recommended",
-    "plugin:storybook/recommended"
+    "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -20,11 +20,11 @@ module.exports = {
   },
   plugins: ["react", "@typescript-eslint", "i18next", "react-hooks"],
   rules: {
-    "react/jsx-indent": ['warn', 2],
-    "quotes": "off",
+    "react/jsx-indent": ["warn", 2],
+    quotes: "off",
     "quote-props": "off",
-    "react/jsx-indent-props": ['warn', 2],
-    indent: ['warn', 2],
+    "react/jsx-indent-props": ["warn", 2],
+    indent: ["warn", 2],
     "react/jsx-filename-extension": [
       2,
       { extensions: [".js", ".jsx", ".tsx"] },
@@ -60,17 +60,19 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "implicit-arrow-linebreak": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "no-undef": "off"
   },
   globals: {
     __IS_DEV__: true,
+    __API__: true,
   },
   overrides: [
     {
       files: ["**/src/**/*.{test,stories}.{ts,tsx}"],
       rules: {
         "i18next/no-literal-string": "off",
-        "max-len": "off"
+        "max-len": "off",
       },
     },
   ],

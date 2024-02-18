@@ -1,15 +1,15 @@
-declare module '*.scss' {
-  type IClassNames = Record<string, string>
+declare module "*.scss" {
+  type IClassNames = Record<string, string>;
   const classNames: IClassNames;
-  export = classNames
+  export = classNames;
 }
 
-declare module '*.png';
-declare module '*.jpg';
-declare module '*.jpeg';
+declare module "*.png";
+declare module "*.jpg";
+declare module "*.jpeg";
 
-declare module '*.svg' {
-  import type React from 'react';
+declare module "*.svg" {
+  import type React from "react";
 
   const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
   export default SVG;
@@ -17,3 +17,10 @@ declare module '*.svg' {
 
 // eslint-disable-next-line @typescript-eslint/naming-convention, no-unused-vars
 declare const __IS_DEV__: boolean;
+declare const __API__: string;
+
+type DeepPartial<T> = T extends object
+  ? {
+      [P in keyof T]?: DeepPartial<T[P]>;
+    }
+  : T;

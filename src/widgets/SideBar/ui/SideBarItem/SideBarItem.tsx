@@ -6,15 +6,15 @@ import { classNames } from "shared/lib/classNames/classNames";
 import cls from "./SideBarItem.module.scss";
 
 interface SideBarItemProps {
-  item?: SideBarItemType;
+  item: SideBarItemType;
   collapsed: boolean;
 }
 export const SideBarItem = memo(({ item, collapsed }: SideBarItemProps) => {
   const { t } = useTranslation();
   return (
     <AppLink
-      to={item.path}
       theme={AppLinkTheme.SECONDARY}
+      to={item.path}
       className={classNames(cls.item, { [cls.collapsed]: collapsed })}
     >
       <item.icon className={cls.icon} />
