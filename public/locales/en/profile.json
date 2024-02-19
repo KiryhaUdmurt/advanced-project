@@ -12,6 +12,9 @@
     "Фото профиля": "Profile photo",
     "Ваш юзернейм": "Your username",
     "Укажите валюту": "Select currency",
-    "Укажите страну": "Select country"
-
+    "Укажите страну": "Select country",
+    "Ошибка сервера при сохранении": "Server error on save",
+    "Некорректный возраст": "Incorrect age",
+    "Некорректный регион": "Incorrect region",
+    "Имя и фамилия обязательны": "Must have firstname and lastname"
 }
