@@ -6,7 +6,7 @@ import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDeco
 import { NavBar } from "./NavBar";
 
 export default {
-  title: "widget/SideBar",
+  title: "widget/NavBar",
   component: NavBar,
   argTypes: {
     backgroundColor: { control: "color" },
