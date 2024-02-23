@@ -107,13 +107,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "https://itechua.com/wp-content/uploads/2022/10/Screenshot_3-28.jpg"
     },
     {
       "id": "2",
       "username": "user1",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "https://itechua.com/wp-content/uploads/2022/10/Screenshot_3-28.jpg"
     }
   ],
   "profile": {
