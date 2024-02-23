@@ -1,25 +1,11 @@
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+/* eslint-disable max-len */
 import { Article } from "entities/Article";
 import {
   ArticleType,
   ArticleBlockType,
 } from "entities/Article/model/types/article";
-import { StoreDecorator } from "shared/config/storybook/StoreDecorator/StoreDecorator";
-import ArticleDetailsPage from "./ArticleDetailsPage";
 
-export default {
-  title: "pages/ArticleDetailsPage",
-  component: ArticleDetailsPage,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
-} as ComponentMeta<typeof ArticleDetailsPage>;
-
-const Template: ComponentStory<typeof ArticleDetailsPage> = () => (
-  <ArticleDetailsPage />
-);
-
-const article: Article = {
+export const articleData: Article = {
   id: "1",
   title: "TypeScript updates",
   subtitle: "What's new in TS 2024",
@@ -88,13 +74,3 @@ const article: Article = {
     },
   ],
 };
-
-export const Normal = Template.bind({});
-Normal.args = {};
-Normal.decorators = [
-  StoreDecorator({
-    articleDetails: {
-      data: article,
-    },
-  }),
-];
