@@ -23,6 +23,8 @@ import { useTranslation } from "react-i18next";
 import { Currency } from "entities/Currency";
 import { Country } from "entities/Country";
 import { Text, TextTheme } from "shared/ui/Text/Text";
+import { useInitialEffect } from "shared/lib/hooks/useInitilaEffect";
+import { useParams } from "react-router-dom";
 import { ProfilePageHeader } from "./ProfilePageHeader/ProfilePageHeader";
 // import cls from "./ProfilePage.module.scss";
 
@@ -36,6 +38,7 @@ interface ProfilePageProps {
 const ProfilePage = ({ className }: ProfilePageProps) => {
   const dispatch = useAppDispatch();
   const { t } = useTranslation("profile");
+  const { id } = useParams<{ id: string }>();
 
   const formData = useSelector(getProfileForm);
   const error = useSelector(getProfileError);
@@ -51,11 +54,11 @@ const ProfilePage = ({ className }: ProfilePageProps) => {
     [ValidateProfileError.INCORRECT_COUNTRY]: t("Некорректный регион"),
   };
 
-  useEffect(() => {
-    if (__PROJECT__ !== "storybook") {
-      dispatch(fetchProfileData());
+  useInitialEffect(() => {
+    if (id) {
+      dispatch(fetchProfileData(id));
     }
-  }, [dispatch]);
+  });
 
   const onChangeFirstName = useCallback(
     (value?: string) => {

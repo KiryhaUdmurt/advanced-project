@@ -12,6 +12,7 @@ const data = {
   lastname: "Kalinin",
   city: "Kazan",
   currency: Currency.RUB,
+  id: "1",
 };
 
 describe("updateProfileData.test", () => {

@@ -118,14 +118,28 @@
       "avatar": "https://itechua.com/wp-content/uploads/2022/10/Screenshot_3-28.jpg"
     }
   ],
-  "profile": {
-    "first": "Киря",
-    "lastname": "Калинин",
-    "age": 23,
-    "currency": "RUB",
-    "country": "Russia",
-    "city": "Sarapul",
-    "username": "admin",
-    "avatar": "https://itechua.com/wp-content/uploads/2022/10/Screenshot_3-28.jpg"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Киря",
+      "lastname": "Калинин",
+      "age": 23,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Sarapul",
+      "username": "admin",
+      "avatar": "https://itechua.com/wp-content/uploads/2022/10/Screenshot_3-28.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Филя",
+      "lastname": "Калинин",
+      "age": 3.5,
+      "currency": "RUB",
+      "country": "Russia",
+      "city": "Sarapul",
+      "username": "сычик",
+      "avatar": "https://itechua.com/wp-content/uploads/2022/10/Screenshot_3-28.jpg"
+    }
+  ]
 }
