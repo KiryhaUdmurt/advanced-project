@@ -1,4 +1,4 @@
-import { articleData } from "shared/const/dataForTests";
+import { article } from "shared/const/articleData";
 import { fetchArticleById } from "../services/fetchArticleById/fetchArticleById";
 import { articleDetailsReducer } from "./articleDetailsSlice";
 import { ArticleDetailsSchema } from "../types/articleDetailsSchema";
@@ -25,12 +25,12 @@ describe("articleDetailsSlice.test", () => {
     expect(
       articleDetailsReducer(
         state as ArticleDetailsSchema,
-        fetchArticleById.fulfilled(articleData, "", "")
+        fetchArticleById.fulfilled(article, "", "")
       )
     ).toEqual({
       isLoading: false,
       error: undefined,
-      data: articleData,
+      data: article,
     });
   });
 });

@@ -26,6 +26,11 @@ const article: Article = {
   img: "https://beeinger.gallerycdn.vsassets.io/extensions/beeinger/ts-live-checks/1.0.0/1647436177102/Microsoft.VisualStudio.Services.Icons.Default",
   views: 4244,
   createdAt: "21.02.2024",
+  user: {
+    id: "1",
+    username: "Kiryha",
+    avatar: "https://i.pravatar.cc/305",
+  },
   type: [ArticleType.IT],
   blocks: [
     {
