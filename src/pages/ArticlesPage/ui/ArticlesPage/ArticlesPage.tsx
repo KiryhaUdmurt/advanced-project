@@ -13,6 +13,9 @@ import {
 } from "shared/lib/DynamicModuleLoader/DynamicModuleLoader";
 import { useInitialEffect } from "shared/lib/hooks/useInitilaEffect";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch";
+import { Page } from "shared/ui/Page/Page";
+import { Text, TextAlign, TextTheme } from "shared/ui/Text/Text";
+import { fetchNextArticlePage } from "../../model/services/fetchNextArticlePage/fetchNextArticlePage";
 import {
   getArticlesPageError,
   getArticlesPageIsLoading,
@@ -49,17 +52,40 @@ const ArticlesPage = ({ className }: ArticlesPageProps) => {
     [dispatch]
   );
 
+  const onLoadNexPart = useCallback(() => {
+    dispatch(fetchNextArticlePage());
+  }, [dispatch]);
+
   useInitialEffect(() => {
-    dispatch(fetchArticlesList());
     dispatch(articlesPageActions.initState());
+    dispatch(
+      fetchArticlesList({
+        page: 1,
+      })
+    );
   });
+
+  if (error) {
+    return (
+      <Page>
+        <Text
+          title={t("Произошла ошибка при загрузке статей")}
+          theme={TextTheme.ERROR}
+          align={TextAlign.CENTER}
+        />
+      </Page>
+    );
+  }
 
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-      <div className={classNames(cls.ArticlesPage, {}, [className])}>
+      <Page
+        onScrollEnd={onLoadNexPart}
+        className={classNames(cls.ArticlesPage, {}, [className])}
+      >
         <ArticleViewSelector view={view} onViewClick={onChangeView} />
         <ArticleList view={view} articles={articles} isLoading={isLoading} />
-      </div>
+      </Page>
     </DynamicModuleLoader>
   );
 };

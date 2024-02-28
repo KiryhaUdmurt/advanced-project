@@ -15,6 +15,7 @@ import { useAppDispatch } from "shared/lib/hooks/useAppDispatch";
 import { RouterPath } from "shared/config/routerConfig/routeConfig";
 import { Button, ThemeButton } from "shared/ui/Button/Button";
 import { AddNewComment } from "features/addNewComment";
+import { Page } from "shared/ui/Page/Page";
 import { addCommentForArticle } from "../../model/services/addCommentForArticle/addCommentForArticle";
 import { fetchCommentsByArticleId } from "../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId";
 import {
@@ -57,15 +58,15 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
 
   if (!id) {
     return (
-      <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+      <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
         {t("Статья не найдена")}
-      </div>
+      </Page>
     );
   }
 
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
-      <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
+      <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
         <Button theme={ThemeButton.OUTLINE} onClick={onBackToList}>
           {t("Назад к списку")}
         </Button>
@@ -73,7 +74,7 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
         <Text className={cls.commentTitle} title={t("Комментарии")} />
         <AddNewComment onSendComment={onSendComment} />
         <CommentList isLoading={commentsIsLoading} comments={comments} />
-      </div>
+      </Page>
     </DynamicModuleLoader>
   );
 };
