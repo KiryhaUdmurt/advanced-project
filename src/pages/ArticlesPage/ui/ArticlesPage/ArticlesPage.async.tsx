@@ -4,6 +4,6 @@ export const ArticlesPageAsync = lazy(
   () =>
     new Promise((resolve) => {
       // @ts-expect-error
-      setTimeout(() => resolve(import("./ArticlesPage")), 1000);
+      setTimeout(() => resolve(import("./ArticlesPage")), 400);
     })
 );
