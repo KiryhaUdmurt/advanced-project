@@ -34,6 +34,7 @@ export const CommentList = memo(
               className={cls.comment}
               isLoading={isLoading}
               comment={comment}
+              key={comment.id}
             />
           ))
         ) : (

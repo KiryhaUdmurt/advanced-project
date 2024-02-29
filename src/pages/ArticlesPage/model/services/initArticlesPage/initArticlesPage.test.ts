@@ -1,13 +1,13 @@
 import { TestAsyncThunk } from "shared/lib/tests/TestAsyncThunk/TestAsyncThunk";
 import { ArticleView } from "entities/Article";
-import { fetchNextArticlePage } from "./fetchNextArticlePage";
 import { fetchArticlesList } from "../fetchArticlesList/fetchArticlesList";
+import { initArticlesPage } from "./initArticlesPage";
 
 jest.mock("../fetchArticlesList/fetchArticlesList");
 
-describe("fetchNextArticlePage.test", () => {
-  test("success fetch data", async () => {
-    const thunk = new TestAsyncThunk(fetchNextArticlePage, {
+describe("initArticlesPage.test", () => {
+  test("not inited", async () => {
+    const thunk = new TestAsyncThunk(initArticlesPage, {
       articlesPage: {
         page: 2,
         ids: [],
@@ -16,17 +16,17 @@ describe("fetchNextArticlePage.test", () => {
         isLoading: false,
         hasMore: true,
         view: ArticleView.LIST,
-        _inited: true,
+        _inited: false,
       },
     });
 
     await thunk.callThunk();
 
     expect(thunk.dispatch).toBeCalledTimes(4);
-    expect(fetchArticlesList).toBeCalledWith({ page: 3 });
+    expect(fetchArticlesList).toHaveBeenCalled();
   });
-  test("fetchArticleList isnt called", async () => {
-    const thunk = new TestAsyncThunk(fetchNextArticlePage, {
+  test("inited", async () => {
+    const thunk = new TestAsyncThunk(initArticlesPage, {
       articlesPage: {
         page: 2,
         ids: [],
