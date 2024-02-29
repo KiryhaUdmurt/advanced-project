@@ -15,7 +15,7 @@ import { useAppDispatch } from "shared/lib/hooks/useAppDispatch";
 import { RouterPath } from "shared/config/routerConfig/routeConfig";
 import { Button, ThemeButton } from "shared/ui/Button/Button";
 import { AddNewComment } from "features/addNewComment";
-import { Page } from "shared/ui/Page/Page";
+import { Page } from "widgets/Page/Page";
 import { addCommentForArticle } from "../../model/services/addCommentForArticle/addCommentForArticle";
 import { fetchCommentsByArticleId } from "../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId";
 import {

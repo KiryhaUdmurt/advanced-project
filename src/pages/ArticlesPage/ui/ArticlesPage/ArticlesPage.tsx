@@ -13,7 +13,7 @@ import {
 } from "shared/lib/DynamicModuleLoader/DynamicModuleLoader";
 import { useInitialEffect } from "shared/lib/hooks/useInitilaEffect";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch";
-import { Page } from "shared/ui/Page/Page";
+import { Page } from "widgets/Page/Page";
 import { Text, TextAlign, TextTheme } from "shared/ui/Text/Text";
 import { fetchNextArticlePage } from "../../model/services/fetchNextArticlePage/fetchNextArticlePage";
 import {
