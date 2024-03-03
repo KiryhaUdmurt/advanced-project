@@ -142,11 +142,11 @@
     },
     {
       "id": "4",
-      "title": "TypeScript updates",
+      "title": "TypeScript courses 2024",
       "subtitle": "What's new in TS 2024",
       "img": "https://beeinger.gallerycdn.vsassets.io/extensions/beeinger/ts-live-checks/1.0.0/1647436177102/Microsoft.VisualStudio.Services.Icons.Default",
-      "views": 4244,
-      "createdAt": "21.02.2024",
+      "views": 10344,
+      "createdAt": "29.02.2024",
       "userId": "1",
       "type": [
         "IT"
@@ -186,14 +186,14 @@
     },
     {
       "id": "5",
-      "title": "Codeium AI",
+      "title": "Top AI bots",
       "subtitle": "Efficient code editing with AI",
       "img": "https://codeium.com/static/images/codeium-twitter-card.png",
-      "views": 13254,
-      "createdAt": "27.02.2024",
+      "views": 9254,
+      "createdAt": "27.01.2024",
       "userId": "1",
       "type": [
-        "IT"
+        "IT", "SCIENCE"
       ],
       "blocks": [
         {
@@ -235,11 +235,11 @@
     },
     {
       "id": "6",
-      "title": "Golang advances",
+      "title": "Kotlin insides",
       "subtitle": "Why learn Golang?",
       "img": "https://i.pinimg.com/originals/f0/1f/69/f01f692c14ed47421cbc564ae4bf0ed3.png",
-      "views": 2355,
-      "createdAt": "27.02.2024",
+      "views": 5355,
+      "createdAt": "27.09.2023",
       "userId": "1",
       "type": [
         "IT"
@@ -270,11 +270,11 @@
     },
     {
       "id": "7",
-      "title": "TypeScript updates",
+      "title": "JS Game Dev",
       "subtitle": "What's new in TS 2024",
       "img": "https://beeinger.gallerycdn.vsassets.io/extensions/beeinger/ts-live-checks/1.0.0/1647436177102/Microsoft.VisualStudio.Services.Icons.Default",
-      "views": 4244,
-      "createdAt": "21.02.2024",
+      "views": 15244,
+      "createdAt": "1.03.2024",
       "userId": "1",
       "type": [
         "IT"
@@ -314,11 +314,11 @@
     },
     {
       "id": "8",
-      "title": "Codeium AI",
+      "title": "AI Code Editor",
       "subtitle": "Efficient code editing with AI",
       "img": "https://codeium.com/static/images/codeium-twitter-card.png",
-      "views": 13254,
-      "createdAt": "27.02.2024",
+      "views": 14254,
+      "createdAt": "23.02.2024",
       "userId": "1",
       "type": [
         "IT"
@@ -363,11 +363,11 @@
     },
     {
       "id": "9",
-      "title": "Golang advances",
+      "title": "JAVA Edition",
       "subtitle": "Why learn Golang?",
       "img": "https://i.pinimg.com/originals/f0/1f/69/f01f692c14ed47421cbc564ae4bf0ed3.png",
-      "views": 2355,
-      "createdAt": "27.02.2024",
+      "views": 2455,
+      "createdAt": "25.02.2024",
       "userId": "1",
       "type": [
         "IT"
@@ -398,11 +398,11 @@
     },
     {
       "id": "10",
-      "title": "TypeScript updates",
+      "title": "TypeScript future",
       "subtitle": "What's new in TS 2024",
       "img": "https://beeinger.gallerycdn.vsassets.io/extensions/beeinger/ts-live-checks/1.0.0/1647436177102/Microsoft.VisualStudio.Services.Icons.Default",
-      "views": 4244,
-      "createdAt": "21.02.2024",
+      "views": 43244,
+      "createdAt": "22.02.2024",
       "userId": "1",
       "type": [
         "IT"
@@ -442,11 +442,11 @@
     },
     {
       "id": "11",
-      "title": "Codeium AI",
+      "title": "Codeium for VS Code",
       "subtitle": "Efficient code editing with AI",
       "img": "https://codeium.com/static/images/codeium-twitter-card.png",
-      "views": 13254,
-      "createdAt": "27.02.2024",
+      "views": 23254,
+      "createdAt": "28.02.2024",
       "userId": "1",
       "type": [
         "IT"
@@ -491,11 +491,11 @@
     },
     {
       "id": "12",
-      "title": "Golang advances",
+      "title": "Alghoritms for beginners",
       "subtitle": "Why learn Golang?",
       "img": "https://i.pinimg.com/originals/f0/1f/69/f01f692c14ed47421cbc564ae4bf0ed3.png",
-      "views": 2355,
-      "createdAt": "27.02.2024",
+      "views": 7355,
+      "createdAt": "24.02.2024",
       "userId": "1",
       "type": [
         "IT"
@@ -526,11 +526,11 @@
     },
     {
       "id": "13",
-      "title": "TypeScript updates",
+      "title": "Git and GitHub",
       "subtitle": "What's new in TS 2024",
       "img": "https://beeinger.gallerycdn.vsassets.io/extensions/beeinger/ts-live-checks/1.0.0/1647436177102/Microsoft.VisualStudio.Services.Icons.Default",
-      "views": 4244,
-      "createdAt": "21.02.2024",
+      "views": 20261,
+      "createdAt": "27.02.2024",
       "userId": "1",
       "type": [
         "IT"
@@ -570,14 +570,14 @@
     },
     {
       "id": "14",
-      "title": "Codeium AI",
+      "title": "Must read books for engineers",
       "subtitle": "Efficient code editing with AI",
       "img": "https://codeium.com/static/images/codeium-twitter-card.png",
-      "views": 13254,
-      "createdAt": "27.02.2024",
+      "views": 6844,
+      "createdAt": "25.02.2024",
       "userId": "1",
       "type": [
-        "IT"
+        "IT", "SCIENCE"
       ],
       "blocks": [
         {
@@ -619,14 +619,154 @@
     },
     {
       "id": "15",
-      "title": "Golang advances",
+      "title": "Apple Vision Pro 2024",
       "subtitle": "Why learn Golang?",
       "img": "https://i.pinimg.com/originals/f0/1f/69/f01f692c14ed47421cbc564ae4bf0ed3.png",
-      "views": 2355,
-      "createdAt": "27.02.2024",
+      "views": 43355,
+      "createdAt": "29.02.2024",
       "userId": "1",
       "type": [
         "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Data structures",
+      "subtitle": "Important structures in programming",
+      "img": "https://i.pinimg.com/originals/f0/1f/69/f01f692c14ed47421cbc564ae4bf0ed3.png",
+      "views": 36355,
+      "createdAt": "02.03.2024",
+      "userId": "1",
+      "type": [
+        "IT", "SCIENCE"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "How AI affects economy?",
+      "subtitle": "AI and economy",
+      "img": "https://i.pinimg.com/originals/f0/1f/69/f01f692c14ed47421cbc564ae4bf0ed3.png",
+      "views": 100355,
+      "createdAt": "29.02.2024",
+      "userId": "1",
+      "type": [
+        "ECONIMICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Robots in Social Services",
+      "subtitle": "Future of work",
+      "img": "https://i.pinimg.com/originals/f0/1f/69/f01f692c14ed47421cbc564ae4bf0ed3.png",
+      "views": 65355,
+      "createdAt": "29.02.2024",
+      "userId": "1",
+      "type": [
+        "SCIENCE", "ECONIMICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        },
+        {
+          "id": "4",
+          "type": "CODE",
+          "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+        },
+        {
+          "id": "2",
+          "type": "IMAGE",
+          "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+          "title": "Рисунок 1 - скриншот сайта"
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Propmpt enginiring",
+      "subtitle": "The future of prompt engineering",
+      "img": "https://i.pinimg.com/originals/f0/1f/69/f01f692c14ed47421cbc564ae4bf0ed3.png",
+      "views": 14555,
+      "createdAt": "29.02.2024",
+      "userId": "1",
+      "type": [
+        "IT", "SCIENCE"
       ],
       "blocks": [
         {

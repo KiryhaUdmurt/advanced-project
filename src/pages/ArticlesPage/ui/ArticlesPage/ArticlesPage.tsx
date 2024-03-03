@@ -1,11 +1,10 @@
 import { memo, useCallback } from "react";
+import { useSearchParams } from "react-router-dom";
 import { classNames } from "shared/lib/classNames/classNames";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import {
   ArticleList,
-  ArticleView,
-  ArticleViewSelector,
 } from "entities/Article";
 import {
   DynamicModuleLoader,
@@ -22,12 +21,12 @@ import {
   getArticlesPageView,
 } from "../../model/selectors/articlesPageSelectors";
 import {
-  articlesPageActions,
   articlesPageReducer,
   getArticles,
 } from "../../model/slices/articlePageSlice";
 import { initArticlesPage } from "../../model/services/initArticlesPage/initArticlesPage";
 import cls from "./ArticlesPage.module.scss";
+import { ArticlesPageFilters } from "../ArticlesPageFilters/ArticlesPageFilters";
 
 interface ArticlesPageProps {
   className?: string;
@@ -45,19 +44,14 @@ const ArticlesPage = ({ className }: ArticlesPageProps) => {
   const view = useSelector(getArticlesPageView);
   const articles = useSelector(getArticles.selectAll);
 
-  const onChangeView = useCallback(
-    (view: ArticleView) => {
-      dispatch(articlesPageActions.setView(view));
-    },
-    [dispatch]
-  );
+  const [searchParams] = useSearchParams();
 
   const onLoadNexPart = useCallback(() => {
     dispatch(fetchNextArticlePage());
   }, [dispatch]);
 
   useInitialEffect(() => {
-    dispatch(initArticlesPage());
+    dispatch(initArticlesPage(searchParams));
   });
 
   if (error) {
@@ -78,8 +72,8 @@ const ArticlesPage = ({ className }: ArticlesPageProps) => {
         onScrollEnd={onLoadNexPart}
         className={classNames(cls.ArticlesPage, {}, [className])}
       >
-        <ArticleViewSelector view={view} onViewClick={onChangeView} />
-        <ArticleList view={view} articles={articles} isLoading={isLoading} />
+        <ArticlesPageFilters />
+        <ArticleList className={cls.list} view={view} articles={articles} isLoading={isLoading} />
       </Page>
     </DynamicModuleLoader>
   );
