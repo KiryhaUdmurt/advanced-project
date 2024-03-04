@@ -5,6 +5,9 @@ import { Button, ThemeButton } from "shared/ui/Button/Button";
 import { LoginModal } from "features/AuthByUsername";
 import { useDispatch, useSelector } from "react-redux";
 import { getUserAuthData, userActions } from "entities/User";
+import { Text, TextTheme } from "shared/ui/Text/Text";
+import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
+import { RouterPath } from "shared/config/routerConfig/routeConfig";
 import cls from "./NavBar.module.scss";
 
 interface NavBarProps {
@@ -27,11 +30,22 @@ export const NavBar = memo(({ className }: NavBarProps) => {
 
   const onLogout = useCallback(() => {
     dispatch(userActions.logout());
-  }, []);
+  }, [dispatch]);
 
   if (authData) {
     return (
       <header className={classNames(cls.NavBar, {}, [className])}>
+        <Text
+          className={cls.appName}
+          theme={TextTheme.INVERTED}
+          title="IT Prophet"
+        />
+        <AppLink
+          to={RouterPath.article_create}
+          theme={AppLinkTheme.SECONDARY}
+        >
+          {t("Создать статью")}
+        </AppLink>
         <Button
           theme={ThemeButton.CLEAR_INVERTED}
           onClick={onLogout}
