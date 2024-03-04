@@ -9,7 +9,7 @@ import { RequireAuth } from "./RequireAuth";
 
 const AppRouter = () => {
   const renderWithWrapper = useCallback((route: AppRoutesProps) => {
-    const element = <div>{route.element}</div>;
+    const element = <div style={{ flexGrow: 1 }}>{route.element}</div>;
 
     return (
       <Route

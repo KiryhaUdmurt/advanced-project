@@ -65,7 +65,7 @@ export const articlePageSlice = createSlice({
         ARTICLE_VIEW_LOCALSTORAGE_KEY
       ) as ArticleView;
       state.view = view;
-      state.limit = view === ArticleView.LIST ? 4 : 9;
+      state.limit = view === ArticleView.LIST ? 4 : 16;
       state._inited = true;
     },
   },
