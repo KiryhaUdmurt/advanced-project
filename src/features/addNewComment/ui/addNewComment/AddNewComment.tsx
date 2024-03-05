@@ -17,7 +17,7 @@ import {
   getAddNewCommentError,
   getAddNewCommentText,
 } from "../../model/selectors/addNewCommentSelectors";
-import cls from "./addNewComment.module.scss";
+import cls from "./AddNewComment.module.scss";
 
 export interface AddNewCommentProps {
   className?: string;
