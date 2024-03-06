@@ -74,12 +74,12 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
           className={cls.commentTitle}
           title={t("Рекомендуем")}
         />
-        <ArticleList
+        {/* <ArticleList
           articles={recommendations}
           isLoading={recommendationsIsLoading}
           className={cls.recommendations}
           target="_blank"
-        />
+        /> */}
         <Text
           size={TextSize.L}
           className={cls.commentTitle}
