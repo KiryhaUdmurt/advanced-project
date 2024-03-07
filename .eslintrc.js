@@ -18,7 +18,13 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "i18next", "react-hooks", "paths-one"],
+  plugins: [
+    "react",
+    "@typescript-eslint",
+    "i18next",
+    "react-hooks",
+    "paths-one",
+  ],
   rules: {
     "react/jsx-indent": ["warn", 2],
     quotes: "off",
@@ -51,7 +57,15 @@ module.exports = {
       "warn",
       {
         markupOnly: true,
-        ignoreAttribute: ["data-testid", "to"],
+        ignoreAttribute: [
+          "data-testid",
+          "to",
+          "target",
+          "justify",
+          "align",
+          "direction",
+          "gap",
+        ],
       },
     ],
     "max-len": ["error", { ignoreComments: true, code: 150 }],
@@ -63,12 +77,12 @@ module.exports = {
     "operator-linebreak": "off",
     "no-undef": "off",
     "react/no-array-index-key": "off",
-    "paths-one/path-checker": "error"
+    "paths-one/path-checker": "error",
   },
   globals: {
     __IS_DEV__: true,
     __API__: true,
-    __PROJECT__: true
+    __PROJECT__: true,
   },
   overrides: [
     {

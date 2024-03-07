@@ -14,6 +14,7 @@ import { useInitialEffect } from "shared/lib/hooks/useInitilaEffect";
 import { useAppDispatch } from "shared/lib/hooks/useAppDispatch";
 import { AddNewComment } from "features/addNewComment";
 import { Page } from "widgets/Page/Page";
+import { VStack } from "shared/ui/Stack";
 import { addCommentForArticle } from "../../model/services/addCommentForArticle/addCommentForArticle";
 import { fetchCommentsByArticleId } from "../../model/services/fetchCommentsByArticleId/fetchCommentsByArticleId";
 import { getArticleComments } from "../../model/slices/articleDetailsCommentsSlice";
@@ -67,26 +68,28 @@ const ArticleDetailsPage = ({ className }: ArticleDetailsPageProps) => {
   return (
     <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
       <Page className={classNames(cls.ArticleDetailsPage, {}, [className])}>
-        <ArticleDetailsPageHeader />
-        <ArticleDetails id={id} />
-        <Text
-          size={TextSize.L}
-          className={cls.commentTitle}
-          title={t("Рекомендуем")}
-        />
-        {/* <ArticleList
+        <VStack gap="16" max>
+          <ArticleDetailsPageHeader />
+          <ArticleDetails id={id} />
+          <Text
+            size={TextSize.L}
+            className={cls.commentTitle}
+            title={t("Рекомендуем")}
+          />
+          {/* <ArticleList
           articles={recommendations}
           isLoading={recommendationsIsLoading}
           className={cls.recommendations}
           target="_blank"
         /> */}
-        <Text
-          size={TextSize.L}
-          className={cls.commentTitle}
-          title={t("Комментарии")}
-        />
-        <AddNewComment onSendComment={onSendComment} />
-        <CommentList isLoading={commentsIsLoading} comments={comments} />
+          <Text
+            size={TextSize.L}
+            className={cls.commentTitle}
+            title={t("Комментарии")}
+          />
+          <AddNewComment onSendComment={onSendComment} />
+          <CommentList isLoading={commentsIsLoading} comments={comments} />
+        </VStack>
       </Page>
     </DynamicModuleLoader>
   );
