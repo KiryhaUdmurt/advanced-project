@@ -68,3 +68,10 @@ SizeL.args = {
   text: "text text text",
   size: TextSize.L,
 };
+
+export const SizeS = Template.bind({});
+SizeS.args = {
+  title: "title title",
+  text: "text text text",
+  size: TextSize.S,
+};
