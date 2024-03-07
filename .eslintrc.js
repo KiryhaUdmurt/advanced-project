@@ -18,7 +18,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "@typescript-eslint", "i18next", "react-hooks"],
+  plugins: ["react", "@typescript-eslint", "i18next", "react-hooks", "paths-one"],
   rules: {
     "react/jsx-indent": ["warn", 2],
     quotes: "off",
@@ -63,6 +63,7 @@ module.exports = {
     "operator-linebreak": "off",
     "no-undef": "off",
     "react/no-array-index-key": "off",
+    "paths-one/path-checker": "error"
   },
   globals: {
     __IS_DEV__: true,
