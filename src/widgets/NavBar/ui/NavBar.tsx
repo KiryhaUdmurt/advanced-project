@@ -8,6 +8,9 @@ import { getUserAuthData, userActions } from "entities/User";
 import { Text, TextTheme } from "shared/ui/Text/Text";
 import { AppLink, AppLinkTheme } from "shared/ui/AppLink/AppLink";
 import { RouterPath } from "shared/config/routerConfig/routeConfig";
+import { Dropdown } from "shared/ui/Dropdown/Dropdown";
+import { Avatar } from "shared/ui/Avatar/Avatar";
+import { getProfileForm } from "entities/Profile";
 import cls from "./NavBar.module.scss";
 
 interface NavBarProps {
@@ -18,6 +21,7 @@ export const NavBar = memo(({ className }: NavBarProps) => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
   const authData = useSelector(getUserAuthData);
+  const formData = useSelector(getProfileForm);
   const [isAuthModal, setIsAuthModal] = useState(false);
 
   const onCloseModal = useCallback(() => {
@@ -40,19 +44,18 @@ export const NavBar = memo(({ className }: NavBarProps) => {
           theme={TextTheme.INVERTED}
           title="IT Prophet"
         />
-        <AppLink
-          to={RouterPath.article_create}
-          theme={AppLinkTheme.SECONDARY}
-        >
+        <AppLink to={RouterPath.article_create} theme={AppLinkTheme.SECONDARY}>
           {t("Создать статью")}
         </AppLink>
-        <Button
-          theme={ThemeButton.CLEAR_INVERTED}
-          onClick={onLogout}
-          className={cls.links}
-        >
-          {t("Выйти")}
-        </Button>
+        <Dropdown
+          direction="bottom left"
+          className={cls.dropdown}
+          items={[
+            { content: t("Выйти"), onClick: onLogout },
+            { content: t("Профиль"), href: RouterPath.profile + authData.id },
+          ]}
+          trigger={<Avatar size={30} src={formData?.avatar} />}
+        />
       </header>
     );
   }
